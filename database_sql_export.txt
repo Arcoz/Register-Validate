@@ -1,0 +1,14 @@
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+CREATE TABLE IF NOT EXISTS `users` (
+  `users_id` int(11) NOT NULL AUTO_INCREMENT,
+  `users_email` varchar(255) CHARACTER SET utf8 COLLATE utf8_danish_ci NOT NULL,
+  `users_secureid` int(20) NOT NULL,
+  `users_registered` tinyint(4) NOT NULL,
+  PRIMARY KEY (`users_id`)
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+
+INSERT INTO `users` (`users_id`, `users_email`, `users_secureid`, `users_registered`) VALUES
+(8, 'SOudge7022@teleworm.us', 962506183, 1),
+(9, 'DNottionged1947@teleworm.us', 1028958263, 1);
